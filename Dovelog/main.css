@@ -1,0 +1,156 @@
+html {
+    background: #e6e9e9;
+    background-image: linear-gradient(270deg, rgb(230, 233, 233) 0%, rgb(216, 221, 221) 100%);
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    color: #545454;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 2em 2em 4em;
+}
+
+nav {
+    width:100%;
+    margin: 0;
+}
+
+nav ul {
+    background-color: rosybrown;
+    margin: 0;
+    padding: none;
+    overflow:hidden;
+}
+
+ul.topnav li.topnav-right {
+    float:right;
+}
+
+ul.topnav li {
+    float:left;
+    list-style: none;
+}
+
+ul.topnav li.dropdownIcon {
+    display:none;
+}
+
+ul.topnav li a {
+    display: block;
+    min-height: 15px;
+    text-align: center;
+    padding: 13px;
+    color: #669;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+ul.topnav li a:hover {
+    background-color: gray;
+    color: #ffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #222;
+    font-weight: 600;
+    line-height: 1.3;
+    text-align:center;
+}
+
+nav,
+header,
+footer {
+    display: block;
+}
+
+h2 {
+    margin-top: 1.3em;
+    text-align: center;
+    color: aqua;
+}
+
+a {
+    color: #0083e8;
+}
+
+b, strong {
+    font-weight: 600;
+}
+
+samp {
+    display: none;
+}
+
+img {
+    animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
+    background: transparent;
+    border: 10px solid rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    display: block;
+    margin: 1.3em auto;
+    max-width: 95%;
+}
+
+.top-form,
+.middle-form,
+.bottom-form{
+    width: 100%;
+    margin: 9px 0;
+    min-height: 60px;
+}
+
+.form{
+    width: 100%;
+    margin: 25px 0;
+}
+
+.form input[type="text"],
+.form textarea{
+    padding:16px 3px;
+    box-sizing: border-box;
+    border:1px solid gray;
+    width: 100%;
+    border-radius: 1px;
+    outline: none;
+    transition: all 0.1s ease;
+}
+
+.form input:focus,
+.form textarea:focus{
+    border-color:azure;
+}
+
+.content{
+    text-align: center;
+    color: black;
+}
+
+
+
+.content h1{
+    letter-spacing: 1px;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 680px;
+    margin: 100px auto 0;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+@keyframes colorize {
+    0% {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+    100% {
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+    }
+}
